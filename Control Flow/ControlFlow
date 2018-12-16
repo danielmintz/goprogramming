@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("hello evryone this is the best way to learn go")
+
+}
+
+//Control Flow:
+//Sequential
+//Iterative / Loop
+//Conditional
