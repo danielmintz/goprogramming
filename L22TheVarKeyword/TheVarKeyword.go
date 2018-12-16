@@ -2,17 +2,40 @@ package main
 
 import "fmt"
 
+// Declare the variable "y"
+// Assign the value 43
+// declare and assign = initialization
+// var does same as short declaration operator but works outside of a funtion
+// body level i.e. it is at package level)
+
+var y = 43
+
+// DECLARE there is a variable with the idenitfier "z"
+// and that the variable with the idnintfier "z" is of the type int
+// Asigns the ZERO value of the type "int" to  "z"
+// false for booleans, 0 for integers, 0.0 for floats, "" for strings
+// and nil for pointers, functions, interfaces, slices, channels,  and maps
+
+var z int
+
+// Best Practise limit scope of "var" use and as much as possible use short declarition
+// := within the function body
+
 func main() {
-	x := 42 //:- this is the short decalrtion operator declaring the  variable  x is asigned the valie i.e  42 (NB x and 42 are operANDS and :- is the operator)
-	x = 90  // as variable x is alreayd declared we can use = to define .N
+	// short declaration variable
+	// Declare a Variable and ASIGN a VALUE (of a certin type)
+	// short declaration operator does same as var but only within
+	// the function body and  from when mentioned.
+
+	x := 42
 	fmt.Println(x)
-	foo()
-	y := 23 + 17 // 23 +7 is an expression and adding in the y bit is a statement. Multiple statements make a programm . NB the + is an operator and the numbers either side the operANDS
+
 	fmt.Println(y)
+	foo()
+
 }
 
 func foo() {
-	fmt.Println("little break and back")
+	fmt.Println("again:", y)
+	fmt.Println(z)
 }
-
-// 6 statement is this program and each statement is made up of expressions.
