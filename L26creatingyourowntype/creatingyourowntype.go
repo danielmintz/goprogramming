@@ -17,4 +17,8 @@ func main() {
 	fmt.Printf("%T\n", a)
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
+	a = int(b)
+
+	fmt.Println(a)
+	fmt.Printf("%T\n", a)
 }

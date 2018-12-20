@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	n, _ := fmt.Println("hello evryone this is all about packages variadic parameters") //n meand number if characters err means nay errors and _ means pls ifgnore expected variable
+	n, _ := fmt.Println("hello evryone this is all about packages variadic parameters and a count") //n meand number if characters err means nay errors and _ means pls ifgnore expected variable
 	fmt.Println(n)
 	//fmt.Println(err)
 
