@@ -13,8 +13,8 @@ func main() {
 	fmt.Println(y)
 	fmt.Printf("%T\n", x)
 	fmt.Printf("%T\n", y)
-	fmt.Println(runtime.GOOS) //operating systm of computer
-	fmt.Println(runtime.GOARCH)
+	fmt.Println(runtime.GOOS)   //operating systm of computer
+	fmt.Println(runtime.GOARCH) // architecture of system
 
 }
 
