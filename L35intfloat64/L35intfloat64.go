@@ -18,4 +18,5 @@ func main() {
 
 }
 
-// nb uint would be a positive wherea int can be positive and negative
+// nb uint (means unsigned) would be a positive wherea int can be positive and negative
+//
