@@ -5,15 +5,14 @@ import (
 )
 
 func main() {
-	favSport := "MTB"
-	switch favSport {
-	case "road cycling":
-		fmt.Println("nope not mtb")
-	case "MTB":
-		fmt.Println("yup this is", favSport)
-	}
 
+	const (
+		a = 2018 + iota
+		b
+		c
+		d
+	)
+	fmt.Println(a, b, c, d)
 }
 
-// Create a program that uses a switch statement with the switch expression
-// specified as a variable of TYPE string with the IDENTIFIER “favSport”.
+//Using iota, create 4 constants for the NEXT 4 years. Print the constant values.
