@@ -19,6 +19,8 @@ func main() {
 func foo() {
 	fmt.Println("Hey this is foo")
 }
+
+// the paremeter below will use the argument above in func main
 func bar(s string) {
 	fmt.Println("Hello", s)
 }
@@ -36,6 +38,6 @@ func mouse(fn string, ln string) (string, bool) {
 }
 
 //Syntax
-//func (receiver) identifier(parameters) (returns) { code }
+//func (r receiver) identifier(parameters) (returns) { code }
 //know the difference between parameters and arguments
 //everthing in go in PASS BY VALUE
