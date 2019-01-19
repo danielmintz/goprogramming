@@ -1,34 +1,25 @@
 package main
 
-import (
-	"fmt"
-)
-
-type car struct {
-	Make    string
-	Model   string
-	RegYear int
-	Class   []string
-}
-
-func (s car) driveway() {
-	fmt.Println("I want to own a", s.Make, s.Model, s.RegYear)
-}
+import "fmt"
 
 func main() {
+	defer foo()
+	xi := []int{2, 3, 4, 5, 6, 7, 8}
+	x := sum(xi...) // unfurling the slice
+	fmt.Println("Hi this is the total", x)
 
-	p1 := car{
-		Make:    "Volkswagen",
-		Model:   "Golf",
-		RegYear: 2012,
-		Class: []string{
-			"TopRange",
-			"MiddleRange",
-			"BottomRange",
-		},
-	}
-	fmt.Println(p1)
-	p1.driveway()
 }
 
-//number  map[string]int
+func sum(x ...int) int {
+	sum := 0
+
+	for i, v := range x {
+		fmt.Println(i, v, sum)
+		sum += v
+	}
+	return sum
+
+}
+func foo() {
+	fmt.Println("Hi")
+}

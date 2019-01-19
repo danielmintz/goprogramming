@@ -21,6 +21,6 @@ func sum(x ...int) int {
 	return sum
 }
 
-//You can create a func which takes an unlimited number of arguments. 
-// When you do this, this is known as a “variadic parameter.” When use the lexical element operator “...T” 
+//You can create a func which takes an unlimited number of arguments.
+// When you do this, this is known as a “variadic parameter.” When use the lexical element operator “...T”
 //to signify a variadic parameter (there “T” represents some type).
