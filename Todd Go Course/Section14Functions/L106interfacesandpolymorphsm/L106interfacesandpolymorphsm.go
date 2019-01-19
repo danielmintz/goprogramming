@@ -85,3 +85,7 @@ func main() {
 	fmt.Printf("%T\n", y)
 
 }
+
+// Interface says if you have my "method" then you are also my type.
+// As person and Secret Agent types also have the method speak then
+// they are also of the type human
