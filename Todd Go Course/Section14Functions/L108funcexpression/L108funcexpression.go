@@ -16,3 +16,5 @@ func main() {
 	}
 	g(1984)
 }
+
+//Assigning a func to a variable
