@@ -39,5 +39,6 @@ func mouse(fn string, ln string) (string, bool) {
 
 //Syntax
 //func (r receiver) identifier(parameters) (returns) { code }
+
 //know the difference between parameters and arguments
 //everthing in go in PASS BY VALUE

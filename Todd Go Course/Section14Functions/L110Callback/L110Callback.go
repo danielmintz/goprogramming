@@ -49,3 +49,4 @@ func odd(f func(xi ...int) int, vi ...int) int {
 }
 
 //passing a func as an argument (bit you add at the top when you call the func)
+//pass a function into another function and then that function uses it
