@@ -1,12 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	n := foo()
-	a, b := bar()
-	fmt.Println(n, a, b)
+	a := foo()
+	b, c := bar()
+
+	fmt.Println(a, b, c)
 
 }
 
@@ -15,10 +18,8 @@ func foo() int {
 }
 
 func bar() (int, string) {
-	return 617, "yooo"
+	return 617, "yooooo"
 }
-
-//func (r receiver) identifier(parameters) (returns) { code }
 
 //create a func with the identifier foo that returns an int
 //create a func with the identifier bar that returns an int and a string
