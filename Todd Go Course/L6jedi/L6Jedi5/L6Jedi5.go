@@ -45,8 +45,6 @@ func main() {
 
 }
 
-//func (r receiver) identifier(parameters) (returns) { code }
-
 // create a type SQUARE
 // create a type CIRCLE
 // attach a method to each that calculates AREA and returns it
