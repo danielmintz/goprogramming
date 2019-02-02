@@ -25,6 +25,7 @@ func main() {
 
 	*b = 45
 	fmt.Println(a)
+	fmt.Println(*b)
 	// new one
 
 	c := 30
@@ -33,6 +34,12 @@ func main() {
 	fmt.Println(c)
 
 }
+
+//What are pointers?
+//All values are stored in memory. Every location in memory has an address. A pointer is a memory address.
+//&
+//*int
+//*
 
 // the above code makes b a pointer to the memory address where an int is stored
 // b is of type "int pointer"
