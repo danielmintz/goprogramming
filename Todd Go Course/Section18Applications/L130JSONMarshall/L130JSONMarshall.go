@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
 type person struct {
@@ -33,7 +34,7 @@ func main() {
 		fmt.Println("error", err)
 	}
 	fmt.Println(string(bs))
-	//os.Stdout.Write(bs)
+	os.Stdout.Write(bs)
 }
 
 //func Marshal(v interface{}) ([]byte, error)

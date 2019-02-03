@@ -37,3 +37,5 @@ func main() {
 
 //We can take JSON and bring it back into our Go program by unmarshalling that JSON.
 //func Unmarshal(data []byte, v interface{}) error
+
+//func Marshal(v interface{}) ([]byte, error)
