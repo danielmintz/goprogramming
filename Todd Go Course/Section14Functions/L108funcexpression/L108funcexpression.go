@@ -15,6 +15,7 @@ func main() {
 		fmt.Println("my seodn fucn expression with more stuff like george orwell year:", x)
 	}
 	g(1984)
+
 }
 
 //Assigning a func to a variable
