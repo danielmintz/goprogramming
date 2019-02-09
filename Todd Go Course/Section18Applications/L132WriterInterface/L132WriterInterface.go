@@ -8,7 +8,8 @@ import (
 
 func main() {
 	fmt.Println("Hello, playground")
-	fmt.Fprintln(os.Stdout, "Hello Playground") // The above is relaity in the background is just calling the below (Methods, type, interfaces)
+	fmt.Fprintln(os.Stdout, "Hello Playground") // The above is relaity in the background is just calling the below 
+												//(Methods, type, interfaces)
 	io.WriteString(os.Stdout, "Hello Playground")
 
 }

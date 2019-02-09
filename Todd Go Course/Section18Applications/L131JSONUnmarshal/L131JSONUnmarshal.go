@@ -16,6 +16,9 @@ func main() {
 	s := `[{"First":"James","Last":"Bond","Age":27},{"First":"Miss","Last":"Moneypenny","Age":27}]`
 	bs := []byte(s) // conversion
 
+	fmt.Println(s)
+	fmt.Println(bs)
+
 	var people []person
 
 	fmt.Println(s, bs)
