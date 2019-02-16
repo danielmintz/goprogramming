@@ -2,24 +2,32 @@ package main
 
 import (
 	"fmt"
-
-	"golang.org/x/crypto/bcrypt"
+	"runtime"
+	"sync"
 )
 
 func main() {
-	s := `password123`
-	bs, err := bcrypt.GenerateFromPassword([]byte(s), bcrypt.MinCost)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(s)
-	fmt.Println(bs)
+	fmt.Println("CPUs:", runtime.NumCPU())
+	fmt.Println("Goroutines:", runtime.NumGoroutine())
 
-	Loginword1 := `password123`
-	err = bcrypt.CompareHashAndPassword(bs, []byte(Loginword1))
-	if err != nil {
-		fmt.Println("You can not log in incorrect password")
-		return
+	counter := 0
+
+	const gs = 100
+	var wg sync.WaitGroup
+	wg.Add(gs)
+
+	for i := 0; i < gs; i++ {
+		go func() {
+			v := counter
+			// time.Sleep(time.Second)
+			runtime.Gosched()
+			v++
+			counter = v
+			wg.Done()
+		}()
+		fmt.Println("Goroutines:", runtime.NumGoroutine())
 	}
-	fmt.Println("you are loged in")
+	wg.Wait()
+	fmt.Println("Goroutines:", runtime.NumGoroutine())
+	fmt.Println("count:", counter)
 }
