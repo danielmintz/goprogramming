@@ -41,5 +41,6 @@ func main() {
 //write the value in the new variable back to the incrementer variable
 //use waitgroups to wait for all of your goroutines to finish
 //the above will create a race condition.
-//Prove that it is a race condition by using the -race flag
+//Prove that it is a race condition by using the -race flag // go run -race L9Jedi3.go in terminal
 //if you need help, here is a hint: https://play.golang.org/p/FYGoflKQej
+///to
