@@ -22,10 +22,10 @@ func main() {
 	xy := make(chan int)
 	go func() {
 		xy <- 77
-		xy <- 78
+
 	}()
 	fmt.Println(<-xy)
-	fmt.Println(<-xy)
+
 }
 
 //Channels
@@ -33,9 +33,9 @@ func main() {
 // Channels Introduction
 // making a channel
 // c := make(chan int)
-// putting values on a channel
+// putting values on a channel (send onto it)
 //	c <- 42
-// taking values off of a channel
+// taking values off of a channel (receive from it)
 //		<-c
 // buffered channels
 //		c := make(chan int, 4)
@@ -49,3 +49,7 @@ func main() {
 // the baton is passed/received by the runners at the same time
 // the value is passed/received synchronously; at the same time
 // channels allow us to pass values between goroutines
+
+// “The capacity, in number of elements, sets the size of the buffer in the channel.
+// If the capacity is zero or absent, the channel is unbuffered and communication succeeds only
+// when both a sender and receiver are ready.” Golang Spec
