@@ -8,16 +8,18 @@ func main() {
 
 	go foo(c)
 
-	bar(c)
+	for v := range c {
+		fmt.Println(v)
+	}
 
 	fmt.Printf("this is the exit")
 }
 func foo(c chan<- int) {
-	c <- 42
-}
+	for i := 0; i < 10; i++ {
+		c <- i
+	}
+	close(c)
 
-func bar(c <-chan int) {
-	fmt.Println("this is the value", <-c)
 }
 
 // loops
