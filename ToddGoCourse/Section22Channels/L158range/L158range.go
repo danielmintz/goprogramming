@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
@@ -8,6 +11,7 @@ func main() {
 
 	go func() {
 		for i := 0; i < 100; i++ {
+			time.Sleep(time.Millisecond * 200)
 			c <- i
 		}
 		close(c)
