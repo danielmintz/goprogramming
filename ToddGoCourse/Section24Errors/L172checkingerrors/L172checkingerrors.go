@@ -1,4 +1,4 @@
-package main
+package maingo statu
 
 import "fmt"
 
@@ -26,3 +26,7 @@ func main() {
 	fmt.Println(answer1, answer2, answer3)
 
 }
+
+// 'Checking errors'
+// Write the code with errors before writing the code without errors. Always check for errors. Always, always, always.*
+// (*almost always)
