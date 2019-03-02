@@ -1,26 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
 
-	c := make(chan int)
-
-	go foo(c)
-
-	for v := range c {
-		fmt.Println(v)
+	_, err := sqrt(-10)
+	if err != nil {
+		log.Fatalln(err)
 	}
-
-	fmt.Printf("this is the exit")
-}
-func foo(c chan<- int) {
-	for i := 0; i < 10; i++ {
-		c <- i
-	}
-	close(c)
-
 }
 
-// loops
-// init, cond, post
+func sqrt(f float64) (float64, error) {
+	if f < 0 {
+		return 0, fmt.Errorf("cant do a sqaure root of a negative such as: %v\t%T", f, f)
+	}
+	return 42, nil
+}

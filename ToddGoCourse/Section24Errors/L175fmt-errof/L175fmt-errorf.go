@@ -10,6 +10,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+
 }
 
 func sqrt(f float64) (float64, error) {
