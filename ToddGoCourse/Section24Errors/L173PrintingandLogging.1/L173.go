@@ -16,7 +16,7 @@ func main() {
 	defer f.Close()
 	log.SetOutput(f)
 
-	f2, err := os.Open("no-file.text")
+	f2, err := os.Open("no-file1.text")
 	if err != nil {
 		//fmt.Println("err happened ", err)
 		log.Println("err happened ", err)

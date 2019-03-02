@@ -1,4 +1,4 @@
-package maingo statu
+package main
 
 import "fmt"
 

@@ -30,7 +30,6 @@ func foo() {
 // log.Println()
 // log.Fatalln()
 // os.Exit()
-// log.Panicln()
-// deferred functions run
+// log.Panicln()  --- deferred functions run
 // can use “recover”
 // panic()
