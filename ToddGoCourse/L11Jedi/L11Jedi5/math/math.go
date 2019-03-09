@@ -1,3 +1,4 @@
+//Package math provides acme level solutions for kayote
 package math
 
 func Average(xs []float64) float64 {
