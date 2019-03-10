@@ -1,19 +1,22 @@
 package main
 
-import("goprogramming/ToddGoCourse/L12Jedi/L12Jedi1/dog/"
-"fmt")
+import (
+	"fmt"
+	"goprogramming/ToddGoCourse/L12Jedi/L12Jedi1/dog"
+)
 
-type Canine struct{
+type canine struct {
 	name string
-	age int
+	age  int
 }
+
 func main() {
 
-	dog1 := Canine{
-		name: "Fido",
-		age: dog.Years(7)
+	dog1 := canine{
+		name: "Molly",
+		age:  dog.Years(11),
 	}
 
-fmt.Println(dog1)
+	fmt.Println(dog1)
 
 }
