@@ -2,31 +2,16 @@ package main
 
 import "fmt"
 
-type customErr struct {
-	info string
-}
-
-func (ce customErr) Error() string {
-	return fmt.Sprintf("This is the error coming now: %v", ce.info)
-
-}
-
 func main() {
+	fmt.Println(MySum(1, 2, 3, 4))
+	fmt.Println(MySum(3, 6, 5, 6, 5, 7))
+}
 
-	c1 := customErr{
-		info: "yo baby",
+//Sum is cool
+func MySum(xs ...int) int {
+	sum := 0
+	for _, v := range xs {
+		sum += v
 	}
-
-	foo(c1)
-
+	return sum
 }
-
-func foo(e error) {
-	fmt.Println("foo is running", e)
-
-}
-
-//Hands-on exercise #3
-// Create a struct “customErr” which implements the builtin.error interface.
-// Create a func “foo” that has a value of type error as a parameter.
-// Create a value of type “customErr” and pass it into “foo”. If you need a hint, here is one.
