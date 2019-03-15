@@ -1,13 +1,11 @@
-// Package acdc is all about everything rock and roll
+// Package acdc asks if you are ready to rock
 package acdc
 
-// Sum adds up all the numbers
+// Sum adds an unlimited number of values of type int
 func Sum(xi ...int) int {
-	sum := 0
+	s := 0
 	for _, v := range xi {
-		sum += v
+		s += v
 	}
-
-	return sum
-
+	return s
 }
