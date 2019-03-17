@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"goprogramming/ToddGoCourse/L13Jedi/dog"
+	"goprogramming/ToddGoCourse/L13Jedi/L13Jedi1/dog"
 )
 
 type canine struct {
