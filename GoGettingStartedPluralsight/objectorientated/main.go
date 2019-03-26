@@ -10,7 +10,7 @@ type myStruct struct {
 
 func main() {
 	foo := &myStruct{"bar"}
-	fmt.Println(foo.myField)
+	fmt.Println(foo)
 }
 
 // fourth way uses the "new" func and uses poitners for multiple returns
