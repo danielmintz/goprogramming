@@ -14,3 +14,5 @@ func sayhello(message *string) { //pointer to a memeory address
 
 	*message = "Hello Go"
 }
+
+//test
