@@ -16,7 +16,7 @@ func main() {
 // fourth way uses the "new" func and uses poitners for multiple returns
 
 // func main() {
-// 	foo := new(myStruct)
+ //	foo := new(myStruct)
 //	foo.myField = "bar"
 //	fmt.Println(foo)
 // }
